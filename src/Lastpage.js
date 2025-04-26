@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './Lastpage.css'
-import { FaGithub,FaLinkedin,FaInstagram} from 'react-icons/fa'
+import { FaGithub,FaLinkedin,FaInstagram,Famail} from 'react-icons/fa'
+import { CiMail } from "react-icons/ci";
+import logo from'./mahesh.creation-removebg-preview.png'
 const Lastpage = () => {
   const [data,setdata]=useState({
     name:'',
@@ -23,12 +25,12 @@ const Lastpage = () => {
   <section className='top'>
     <div className='div1'>
       <h1 className='contact'>Contact me</h1>
-      <p>maheshpanasa7595@gmail.com</p>
+      <p><CiMail/> maheshpanasa7595@gmail.com</p>
       <h3>+91-7995257595</h3>
        <aside className='social'>
-        <p><FaGithub/> https://github.com/panasamahesh</p>
-        <p className='p1'><FaLinkedin/>https://www.linkedin.com/in/mahesh-panasa-0b3b2b232</p>
-        <p><FaInstagram/> mahi_mahesh_0000</p>
+        <p><FaGithub/> <a href='https://github.com/panasamahesh'>https://github.com/panasamahesh</a></p>
+        <p className='p1'><a href='https://www.linkedin.com/in/mahesh-panasa-0b3b2b232'><FaLinkedin/>https://www.linkedin.com/in/mahesh-panasa-0b3b2b232</a></p>
+        <p><FaInstagram/><a href='https://www.instagram.com/mahi_mahesh_0000/'> mahi_mahesh_0000</a></p>
        </aside>
        <a href="/pdf latest resume.pdf" download class="download">download cv</a>
        
@@ -42,7 +44,8 @@ const Lastpage = () => {
     <textarea type='text-area' placeholder='enter your text' name='text' onChange={handlechange} value={data.text}/>
     <br></br>
     <button type='submit'>Submit</button>
-     <h1>Thank you</h1>
+     {/* <h1>Thank you</h1> */}
+     <img src={logo} alt='maheshimage' className='lastimage'></img>
     </div>
     </form>
     <footer>Copyright@mahesh©️2025</footer>

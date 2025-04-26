@@ -51,7 +51,7 @@ const Header = () => {
         <h2>I am a passionate</h2>
         {/* <span className="element">JAVA FULL STACK DEVELOPER</span> */}
         {/* <br></br> */}
-        <TypeAnimation sequence={["WEB DESIGNER...!",3000,"FRONTEND DEVELOPER...!",3000,"JAVA FULL STACK DEVELOPER...!",3000]}speed={60} repeat={Infinity} wrapper='span'/>
+        <TypeAnimation sequence={["WEB DESIGNER...!",3000,"FRONTEND DEVELOPER...!",3000,"BACK END DEVELOPER...!",3000]}speed={70} repeat={Infinity} wrapper='span'/>
         </aside>
        </div>
     

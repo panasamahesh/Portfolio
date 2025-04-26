@@ -30,7 +30,7 @@ const Page4 = () => {
          </section>
       </div>
       < div className='seemore'>
-         <button><h2>See More</h2></button>
+         <button><h2><a href='https://github.com/panasamahesh'>See More</a></h2></button>
       </div>
    </main>
 }
