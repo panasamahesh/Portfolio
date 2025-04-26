@@ -1,0 +1,66 @@
+.myservice{
+    scroll-behavior: smooth;
+    width: 100%;
+    /* border: 2px solid red; */
+    background-color: black;
+    display: flex;
+    gap: 100px;
+    padding: 100px;
+    flex-wrap: wrap;
+}
+.myservicehead{
+    background-color: black;
+    height: 50%;
+    width: 100%;
+    color: white;
+}
+.myservice aside{
+    
+    width: 27%;
+    border: 2px solid yellow;
+    border-radius: 25px; 
+    box-shadow:  7px 10px 5px   yellow;
+    display: flex;
+        
+}
+.myservice a{
+    color:  red;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 1px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.myservice aside:hover{
+    /* background-color: rgba(19, 255, 255, 0.911); */
+    
+    transform: translateY(-10px);
+    color: white;
+    transform: matrix(20px);
+
+}
+header{
+    height: 80px;
+    padding-left: 150px;
+    width: 100%;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    padding-bottom: 50px;
+    font-size: 35px;
+}
+aside h1{
+    padding-left: 20px;
+    padding-top: 20px;
+    /* border: 2px solid red; */
+    padding-left: 10px;
+    color: hsl(347, 98%, 55%);
+    display: flex;
+}
+.java{
+    height: 50px;
+    width: 50px;
+}
+.myservice p{
+    font-size: 15px;
+    text-indent: 2rem;
+}
