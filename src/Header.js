@@ -34,11 +34,12 @@ const Header = () => {
   return<>
    <main className='main'>
          <div className='a'>
-        <button onClick={Home}>Home</button>
+        <button onClick={Home} >Home</button>
         <button onClick={handlescroll}>About</button>
         <button onClick={Service}>Service</button>
         <button onClick={Profile}>Profile</button>
         <button onClick={Contact}>Contact</button>
+        
         </div> 
        
     <div className='Header'>

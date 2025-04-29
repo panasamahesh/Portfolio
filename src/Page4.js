@@ -4,7 +4,7 @@ import student from './download.png';
 import atm from './download (1).jpg'
 import './Page4.css'
 const Page4 = () => {
-   return <main className='page4head'>
+   return <main className='page4head' style={{display:'flex',flexDirection:'column',gap:'0.9rem'}}>
       <div className='page4'>
          <h1>My work</h1>
          <section className='mywork'>
@@ -30,7 +30,7 @@ const Page4 = () => {
          </section>
       </div>
       < div className='seemore'>
-         <button><h2><a href='https://github.com/panasamahesh'>See More</a></h2></button>
+         <div><h2><a href='https://github.com/panasamahesh'>See More</a></h2></div>
       </div>
    </main>
 }
