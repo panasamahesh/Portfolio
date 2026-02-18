@@ -34,7 +34,7 @@ const Header = () => {
   return<>
    <main className='main'>
          <div className='a'>
-        <button onClick={Header} >Home</button>
+        <button onClick={handlescroll} >Home</button>
         <button onClick={Home}>About</button>
         <button onClick={Service}>Service</button>
         <button onClick={Profile}>Profile</button>
