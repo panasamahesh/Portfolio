@@ -7,7 +7,7 @@ import { TypeAnimation } from 'react-type-animation';
 const Header = () => {
     const handlescroll=()=>{
         window.scrollTo({
-            top:15, behavior:'smooth'
+            top:0, behavior:'smooth'
         })
     }
     const Home=()=>{
@@ -34,8 +34,8 @@ const Header = () => {
   return<>
    <main className='main'>
          <div className='a'>
-        <button onClick={Home} >Home</button>
-        <button onClick={handlescroll}>About</button>
+        <button onClick={Header} >Home</button>
+        <button onClick={Home}>About</button>
         <button onClick={Service}>Service</button>
         <button onClick={Profile}>Profile</button>
         <button onClick={Contact}>Contact</button>
