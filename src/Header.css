@@ -4,12 +4,9 @@
     flex-wrap: wrap;
 }
 .main{
-    
     height: 100%;
     width: 100%;
-    flex-direction: column; 
    background-image:url('/src/WhatsApp\ Image\ 2025-04-22\ at\ 10.34.14_22de51cf.jpg') ;
-   /* border: 2px solid blue; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,27 +16,21 @@
 .image1{
      height: 15%;
     width: 25%; 
-    /* border: 2px solid red; */
-    /* border: 2px solid red */
 }
 .Header{
     
      padding-left: 15%;
     padding-top: 9%;
     flex-wrap: wrap;
-    /* border: 2px solid yellow; */
-  
    
 }
 .a{
-   /* height: 70px; */
    width: 100%;
  flex-basis: 50%;
  display: flex;
  flex-wrap: wrap;
  padding-top: 30px;
   justify-content: flex-end;
- /* border: 2px solid red; */
   padding-right: 3%;
 position: fixed;    
 }
@@ -53,9 +44,7 @@ position: fixed;
     cursor: pointer;
 }
 .content{
-    /* height: 500px; */
     width: 50%;
-    /* background-color: white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +53,7 @@ position: fixed;
    /* border: 2px solid red;     */
 }
 .aside1{
-    width: 40%;
+    width: 50%;
     background-color: #feffff83;
 font-family: 'Courier New', Courier, monospace;
     border-radius: 25%;

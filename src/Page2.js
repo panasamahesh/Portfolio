@@ -49,18 +49,18 @@ const Page2 = () => {
                         {state==="experience"&&(
                             <div className='expe'>
                                 <h4>Experience</h4>
-                                <p>Full statck Development at Grahith software solution</p>
                                 <p>1 year at SAP maintanence</p>
+                                <p>Full statck Development at Grahith software solution</p>
                             </div>
                         )}
                         {state==="education"&&(
                             <div className='ed'>
                                 
                                 
-                                <p>2017-2024</p>
+                                <p>2017-2025</p>
                                 <h2>B.COM COMPUTERS</h2>
-                                <h2> CGPA-6.5/10</h2>
-                                <h2>AMBEDKAR OPEN UNIVERSITY</h2>
+                                <h2> CGPA-5.0/10</h2>
+                                <h2>DR.B.R.AMBEDKAR OPEN UNIVERSITY NALGONDA</h2>
                                 <br></br>
 
                                 <p>2015-2017</p>

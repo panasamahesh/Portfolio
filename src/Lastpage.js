@@ -32,7 +32,7 @@ const Lastpage = () => {
         <p className='p1'><a href='https://www.linkedin.com/in/mahesh-panasa-0b3b2b232'><FaLinkedin/>https://www.linkedin.com/in/mahesh-panasa-0b3b2b232</a></p>
         <p><FaInstagram/><a href='https://www.instagram.com/mahi_mahesh_0000/'> mahi_mahesh_0000</a></p>
        </aside>
-       <a href="/pdf latest resume.pdf" download class="download">download cv</a>
+       <a href="/Mahesh_Professional_Resume.pdf" download class="download">download cv</a>
        
     </div>
     <form onSubmit={handlesubmit}>
