@@ -12,7 +12,7 @@ const Header = () => {
     }
     const Home=()=>{
        window.scrollTo({
-        top:0,behavior:'smooth'
+        top:1500,behavior:'smooth'
        })
     }
     const Service=()=>{
