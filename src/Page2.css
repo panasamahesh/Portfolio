@@ -1,177 +1,190 @@
-.head{
-    /* width: 100%; */
-    margin: 0;
-    box-sizing: border-box;
-    background-color: black;
+.about-page {
+    background-color: #0a0a0a;
     color: white;
-    display: flex;
-    background-size: cover;
-    /* border: 2px solid #008000; */
-    /* flex-direction: column; */
+    min-height: 100vh;
+    padding: 120px 8% 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-/* .ski skills:active{
-    color: red; */
 
-.phot{
-    height: 100%;
-    width: 100%;
-    /* border: 2px solid red; */
-    flex-wrap: wrap;
-    padding-left: 5%;
-    background-size: cover;
-    flex-basis: 40%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-top: 9%;
-    /* border-radius: 10px; */
-    /* align-items: center; */
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
 }
-.ski{
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 0%;
-    align-items: center;
-    line-height: 100%;
-}
-.content{
-    height: 100vh;
-    padding-top: 10%;
-    display: flex;
-    background-size: cover;
-    flex-basis:60%;
-    /* border: 2px solid rgb(51, 255, 0); */
-    font-size: 100%;
-    flex-wrap: wrap;
-    
-}
-.pic{
-    /* padding-left: 10%; */
-    /* border: 2px solid red; */
-    height :100%;
-    width: 60%;
-    border-radius: 10px;
-    flex-wrap: wrap;
-}
-.content1{
-   /* border: 2px solid red; */
-    text-indent: 3em;
-    line-height: 100%;
-    word-spacing: 5px;
-    flex-basis: 60%;
-    
-    /* border: 2px solid yellow; */
-    display: flex;
-    flex-direction: column;
-        justify-content: first baseline;
-    align-items: flex-start;
 
+.about-title {
+    font-size: 3.5rem;
+    color: #ff4d4d;
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
-}.content1 contentlo{
+.about-description {
+    font-size: 1.25rem;
+    line-height: 1.9;
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    padding: 0 10px;
+}
+
+/* Tabs */
+.tabs {
     display: flex;
-    align-items: center;
     justify-content: center;
-} 
-.contentlo p{
-    font-size: 105%;
-    padding-bottom: 5%;
-}
-.about{
-   
-    padding-top: 5%;
-    display: flex;
-    padding-bottom: 2%;
-    justify-content: center;
-    /* position: static; */
-    
-}
-.content1 p{
-    padding-top: 3%;
-    font-style: italic;
-}
-.ski h4{
-    font-size: 150%;
-    padding-top: 3%;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
 }
 
-.skills.ski{
-
-flex-basis: 50%;
-width: 100%;
-/* border: 2px solid red; */
-display: flex;
-/* flex-direction: column; */
-
-}
-.ski p{
-    font-size: 100%;
-}
-p{
-    font-size: 100%;
-    display: flex;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    word-spacing: 1px;
-    letter-spacing: 1px; 
-    padding-left: 10px;
-    
-
-}
-.ed h2{
-    font-size: 100%;
-    padding-top: 2%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   
-}
-.ed p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 130%;
-    color: red;
-}
-h2{
-    font-size: 25px;
-    display: flex;
-    gap: 10px;
-    padding-left: 30px;
-}
-h4{
-    color: red;
-    font-family: cursive; 
-    padding-left: 20px;   
-}
-.buttons{
-    
-    width: 100%;
-    display: flex;
-    gap: 30px;
-    background-color: transparent;
-    color: transparent;
-   
-    
-}
-.exp{
-    height: 60%;
-    padding-bottom: 30%;
-}
-button :hover{
-    
-    transform: translateY(-20px);
-}
-button{
-    background-color: transparent;
-    cursor: pointer;
+.tab-btn {
+    padding: 14px 32px;
+    background: transparent;
+    border: 2px solid #444;
     color: white;
-    
+    font-size: 1.15rem;
     font-weight: 600;
-    font-size: 25px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    border: none;
+    border-radius: 50px;
+    cursor: pointer;
     display: flex;
-    padding-left: 29px;
-    gap: 5px;
-    justify-content: center;
     align-items: center;
-    padding-bottom: 5px;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
 
+.tab-btn:hover {
+    border-color: #ff4d4d;
+    color: #ff4d4d;
+    transform: translateY(-3px);
+}
+
+.tab-btn.active {
+    background: #ff4d4d;
+    color: white;
+    border-color: #ff4d4d;
+}
+
+/* Tab Content */
+.tab-content h3 {
+    color: #ff4d4d;
+    font-size: 1.7rem;
+    margin: 2rem 0 1rem;
+}
+
+.tab-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #ccc;
+    margin-bottom: 0.8rem;
+}
+
+/* Education - Compact Cards */
+.education-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.edu-item {
+    background-color: #1a1a1a;
+    padding: 1.3rem 1.4rem;
+    border-radius: 12px;
+    border-left: 5px solid #ff4d4d;
+    min-height: 155px;
+}
+
+.year {
+    display: inline-block;
+    background: #ff4d4d;
+    color: white;
+    padding: 5px 14px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.edu-item h4 {
+    margin: 8px 0 6px;
+    font-size: 1.25rem;
+}
+
+/* Experience */
+.exp-item {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 5px solid #ff4d4d;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 768px) {
+    .about-page {
+        padding: 100px 6% 80px;
+    }
+    .about-title {
+        font-size: 2.8rem;
+    }
+    .about-description {
+        font-size: 1.15rem;
+    }
+    .education-content {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.2rem;
+    }
+    .edu-item {
+        min-height: 170px;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 576px) {
+    .about-page {
+        padding: 90px 5% 70px;
+    }
+    .about-title {
+        font-size: 2.4rem;
+    }
+    .about-description {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+    .tabs {
+        gap: 1rem;
+    }
+    .tab-btn {
+        padding: 12px 24px;
+        font-size: 1.05rem;
+    }
+    .education-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .edu-item {
+        min-height: auto;
+        padding: 1.2rem;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 400px) {
+    .about-page {
+        padding: 80px 4% 60px;
+    }
+    .about-title {
+        font-size: 2.1rem;
+    }
+    .tab-btn {
+        width: 85%;
+        justify-content: center;
+    }
+    .edu-item {
+        padding: 1.1rem;
+    }
+    .edu-item h4 {
+        font-size: 1.15rem;
+    }
 }

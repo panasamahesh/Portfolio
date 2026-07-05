@@ -1,95 +1,195 @@
-.page4head{
-    background-color: black;
-    
-    flex-wrap: wrap;
-}
-.mywork{
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.page4head {
     background-color: black;
     color: white;
-    flex-wrap: wrap;
+    padding-bottom: 60px;
 }
-.page4 h1{
-    flex-wrap: wrap;
-    color: white;
-    font-size: 45px;
-    padding-left: 10%;
-    padding-top: 3%;
+
+.page4 h1 {
+    font-size: 3.5rem;
+    color: #ff4d4d;
+    text-align: center;
+    padding: 60px 0 40px;
     font-style: italic;
-    background-color: black;
 }
-.Image{
-    width: 350px;
+
+/* Projects Grid */
+.mywork {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 0 8%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.project-card {
     position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
 }
-.Image img{
-    height: 300px;
-    width: 350px;
-    border-radius: 20%;
+
+.project-card:hover {
+    transform: translateY(-15px);
 }
-.Image img{
-  width: 100%;
-  display: block;
-  margin: auto;
-}
-.matter > p{
-  transform: translateY(25px);
-  transition: transform 0.6s;
-}
-.matter{
-    flex-wrap: wrap;
-    height: 100%;
+
+.project-card img {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.matter {
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
-    background-color: (0,0,0,0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0;
-    transition: 0.6s;
-}
-.matter:hover{
-    opacity: 1;
-    color: rgb(0, 0, 0);
-    background-color: rgba(9, 239, 255, 0.527);
-    border-radius: 20%;
-   transform: translateY(0px);
-}
-.matter>*{
-    transform: translateY(25px);
-    transition: transform 0.6s;
-}
-.seemore {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.seemore a{
-    padding-left:15px;
-    font-size: 25px;
-    /* display: flex; */
-    align-items: center;
-    border: 2px solid rgb(255, 78, 146);
-    color: white;
-    padding-right: 20px;
-    border-radius: 20px;
-    text-decoration: none;
-}
-footer{
-    /* padding-top: ; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    height: 8%;
     width: 100%;
-    background-color: rgb(25, 42, 56);
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-card:hover .matter {
+    opacity: 1;
+}
+
+.matter h3 {
+    color: #ff4d4d;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+}
+
+.matter p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.matter a {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.matter a:hover {
+    text-decoration: underline;
+}
+
+/* See More Button */
+.seemore {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.seemore a {
+    font-size: 1.6rem;
+    color: white;
+    border: 2px solid #ff4d4d;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.seemore a:hover {
+    background: #ff4d4d;
+    color: black;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 768px) {
+    .page4 h1 {
+        font-size: 2.8rem;
+        padding: 50px 0 35px;
+    }
+    .mywork {
+        padding: 0 5%;
+        gap: 1.8rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .project-card img {
+        height: 260px;
+    }
+    .matter h3 {
+        font-size: 1.25rem;
+    }
+    .matter p {
+        font-size: 0.95rem;
+    }
+    .seemore a {
+        font-size: 1.4rem;
+        padding: 11px 26px;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 576px) {
+    .page4 h1 {
+        font-size: 2.3rem;
+        padding: 40px 0 30px;
+    }
+    .mywork {
+        padding: 0 4%;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+    }
+    .project-card {
+        border-radius: 16px;
+    }
+    .project-card img {
+        height: 240px;
+    }
+    .matter {
+        padding: 18px;
+    }
+    .matter h3 {
+        font-size: 1.15rem;
+    }
+    .matter p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    .seemore {
+        margin-top: 40px;
+    }
+    .seemore a {
+        font-size: 1.2rem;
+        padding: 10px 24px;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 400px) {
+    .page4 h1 {
+        font-size: 2rem;
+        padding: 35px 0 25px;
+    }
+    .mywork {
+        padding: 0 15px;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .project-card img {
+        height: 220px;
+    }
+    .matter h3 {
+        font-size: 1.05rem;
+    }
+    .matter p {
+        font-size: 0.85rem;
+    }
+    .seemore a {
+        font-size: 1.1rem;
+        padding: 9px 22px;
+    }
 }

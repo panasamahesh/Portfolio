@@ -1,38 +1,80 @@
-import React from 'react'
-import flight from './download.jpg'
+import React from 'react';
+import flight from './download.jpg';
 import student from './download.png';
-import atm from './download (1).jpg'
-import './Page4.css'
+import atm from './download (1).jpg';
+import photography from './images.jpg';
+import nalinsoftlogo from './imagenewupdated.jpg';
+import './Page4.css';
+
 const Page4 = () => {
-   return <main className='page4head' style={{display:'flex',flexDirection:'column',gap:'0.9rem'}}>
-      <div className='page4'>
-         <h1>My work</h1>
-         <section className='mywork'>
-            <aside className='Image'>
-               <img src={flight} alt='flight' title='Flight management system' />
-               <div className='matter'>
-                  <p>The Flight Management System is a software application designed to handle and streamline the operations of an airline or airport. The system allows for the efficient management of flights, including scheduling, ticket bookings, cancellations, passenger information, and aircraft data. It provides a user-friendly interface for both administrators and users to interact with flight-related services.</p>
-               </div>
-            </aside>
-            <aside className='Image'>
-               <img src={student} alt='student' title='Student management system' />
-               <div className='matter'>
-                  <p>A Student Database Management System is a software application designed to efficiently store, manage, and retrieve student-related information within an educational institution. It helps automate administrative tasks, improve record-keeping accuracy, and provide quick access to essential student data.</p>
-                  </div>
-            </aside>
-            <aside className='Image'>
-               <img src={atm} alt='atm' title='Atm management system' />
-               <div className='matter'>
-                  <p>An ATM (Automated Teller Machine) Management System is a software solution designed to control and manage ATM operations for banks and financial institutions. It ensures secure transactions, real-time monitoring, and smooth customer experiences when accessing banking services through ATMs.</p>
-                  </div>   
-            </aside>
+    return (
+        <main className='page4head' id="projects">
+            <div className='page4'>
+                <h1>My Projects</h1>
+                
+                <section className='mywork'>
+                    {/* Project 1 */}
+                    <div className='project-card'>
+                        <img src={flight} alt='Flight Management System' />
+                        <div className='matter'>
+                            <h3>Flight Management System</h3>
+                            <p>Comprehensive system for flight scheduling, ticket booking, passenger management, and airline operations.</p>
+                        </div>
+                    </div>
 
-         </section>
-      </div>
-      < div className='seemore'>
-         <div><h2><a href='https://github.com/panasamahesh'>See More</a></h2></div>
-      </div>
-   </main>
-}
+                    {/* Project 2 */}
+                    <div className='project-card'>
+                        <img src={student} alt='Student Management System' />
+                        <div className='matter'>
+                            <h3>Student Management System</h3>
+                            <p>Full-featured database system to manage student records, attendance, and academic information efficiently.</p>
+                        </div>
+                    </div>
 
-export default Page4
+                    {/* Project 3 */}
+                    <div className='project-card'>
+                        <img src={atm} alt='ATM Management System' />
+                        <div className='matter'>
+                            <h3>ATM Management System</h3>
+                            <p>Secure and efficient system for managing ATM transactions, monitoring, and banking operations.</p>
+                        </div>
+                    </div>
+
+                    {/* New - Live Photography */}
+                    <div className='project-card'>
+                        <img src={photography} alt='Live Photography Website' />
+                        <div className='matter'>
+                            <h3>Live Photography Website</h3>
+                            <p>Modern photography portfolio with QR code integration for easy photo & video sharing at events.</p>
+                            <a href="https://vedhamixingunitlivephotography-com.lovable.app/" target="_blank" rel="noopener noreferrer">
+                                Visit Live →
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* New - Nalinsoft */}
+                    <div className='project-card'>
+                        <img src={nalinsoftlogo} alt='Nalinsoft Website' />
+                        <div className='matter'>
+                            <h3>Nalinsoft Website</h3>
+                            <p>Professional business website showcasing ERP, SAP, and Digital Transformation services.</p>
+                            <a href="https://panasamahesh.github.io/NalinsoftWebsite/" target="_blank" rel="noopener noreferrer">
+                                Visit Live →
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div className='seemore'>
+                <h2>
+                    <a href="https://github.com/panasamahesh" target="_blank" rel="noopener noreferrer">
+                        See More on GitHub →
+                    </a>
+                </h2>
+            </div>
+        </main>
+    );
+};
+
+export default Page4;

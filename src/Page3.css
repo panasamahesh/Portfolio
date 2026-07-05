@@ -1,66 +1,170 @@
-.myservice{
-    scroll-behavior: smooth;
-    width: 100%;
-    /* border: 2px solid red; */
-    background-color: black;
-    display: flex;
-    gap: 100px;
-    padding: 100px;
-    flex-wrap: wrap;
-}
-.myservicehead{
-    background-color: black;
-    height: 50%;
-    width: 100%;
+.services-page {
+    background-color: #0a0a0a;
     color: white;
+    padding: 120px 8% 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.myservice aside{
-    
-    width: 27%;
-    border: 2px solid yellow;
-    border-radius: 25px; 
-    box-shadow:  7px 10px 5px   yellow;
-    display: flex;
-        
-}
-.myservice a{
-    color:  red;
-    font-size: 20px;
-    padding-left: 10px;
-    padding-bottom: 1px;
-    cursor: pointer;
-    text-decoration: none;
-}
-.myservice aside:hover{
-    /* background-color: rgba(19, 255, 255, 0.911); */
-    
-    transform: translateY(-10px);
-    color: white;
-    transform: matrix(20px);
 
+.services-header {
+    text-align: center;
+    margin-bottom: 4rem;
 }
-header{
-    height: 80px;
-    padding-left: 150px;
-    width: 100%;
-    flex-wrap: wrap;
-    /* background-color: red; */
-    padding-bottom: 50px;
-    font-size: 35px;
+
+.services-header h1 {
+    font-size: 3.5rem;
+    color: #ff4d4d;
+    margin-bottom: 1rem;
 }
-aside h1{
-    padding-left: 20px;
-    padding-top: 20px;
-    /* border: 2px solid red; */
-    padding-left: 10px;
-    color: hsl(347, 98%, 55%);
-    display: flex;
+
+.services-header p {
+    font-size: 1.3rem;
+    color: #aaa;
+    max-width: 700px;
+    margin: 0 auto;
 }
-.java{
-    height: 50px;
-    width: 50px;
+
+/* Services Grid */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
-.myservice p{
-    font-size: 15px;
-    text-indent: 2rem;
+
+.service-card {
+    background-color: #111;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 1px solid #222;
+}
+
+.service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(255, 77, 77, 0.15);
+    border-color: #ff4d4d;
+}
+
+.icon-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.service-icon {
+    font-size: 4.5rem;
+    color: #ff4d4d;
+}
+
+.service-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: white;
+}
+
+.service-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* Button */
+.learn-more-btn {
+    background: transparent;
+    color: #ff4d4d;
+    border: 2px solid #ff4d4d;
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background: #ff4d4d;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 768px) {
+    .services-page {
+        padding: 100px 6% 80px;
+    }
+    .services-header h1 {
+        font-size: 2.8rem;
+    }
+    .services-header p {
+        font-size: 1.2rem;
+    }
+    .services-container {
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .service-card {
+        padding: 2rem 1.5rem;
+    }
+    .service-icon {
+        font-size: 4rem;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 576px) {
+    .services-page {
+        padding: 90px 5% 70px;
+    }
+    .services-header h1 {
+        font-size: 2.4rem;
+    }
+    .services-header p {
+        font-size: 1.1rem;
+    }
+    .services-container {
+        gap: 1.8rem;
+        padding: 0 2%;
+    }
+    .service-card {
+        padding: 2rem 1.4rem;
+    }
+    .service-icon {
+        font-size: 3.5rem;
+    }
+    .service-card h2 {
+        font-size: 1.55rem;
+    }
+    .service-card p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    .learn-more-btn {
+        padding: 11px 28px;
+        font-size: 1rem;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 400px) {
+    .services-page {
+        padding: 80px 4% 60px;
+    }
+    .services-header h1 {
+        font-size: 2.1rem;
+    }
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .service-card {
+        padding: 1.8rem 1.2rem;
+    }
+    .service-icon {
+        font-size: 3.2rem;
+    }
+    .service-card h2 {
+        font-size: 1.4rem;
+    }
 }
