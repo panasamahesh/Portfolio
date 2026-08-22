@@ -68,13 +68,13 @@ const Lastpage = () => {
                         </a>
                     </div>
 
-                                 <a 
-                             href="/PANASA_MAHESH_Resume.pdf" 
-                             download="PANASA_MAHESH_Resume"
-                            className='download-cv'
-                              >
-                             Download CV ↓
-                                 </a>
+                               <a
+  href={`${process.env.PUBLIC_URL}/PANASA_MAHESH_Resume.pdf`}
+  download="PANASA_MAHESH_Resume.pdf"
+  className="download-cv"
+>
+  Download CV ↓
+</a>
                 </div>
 
                 {/* Form */}

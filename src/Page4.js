@@ -4,6 +4,7 @@ import student from './download.png';
 import atm from './download (1).jpg';
 import photography from './images.jpg';
 import nalinsoftlogo from './imagenewupdated.jpg';
+import nexrai from "./assets/nexrailogo.png";
 import './Page4.css';
 
 const Page4 = () => {
@@ -62,6 +63,17 @@ const Page4 = () => {
                                 Visit Live →
                             </a>
                         </div>
+                    </div>
+                     {/* nexrai */}
+                    <div className='project-card'>
+                       <img src={nexrai} alt="Nexrai" />
+                        <div className='matter'>
+                            <h3>Nexrai Website</h3>
+                            <p>“Turning Ideas into Intelligent Digital Experiences.”</p>
+                            <a href=" https://panasamahesh.github.io/NexirAi/" target="_blank" rel="noopener noreferrer">
+                                Visit Live →
+                            </a>
+                        </div>``
                     </div>
                 </section>
             </div>

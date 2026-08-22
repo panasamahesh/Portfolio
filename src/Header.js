@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { TypeAnimation } from 'react-type-animation';
-import profile from './hY1IW.jpg';
+import profile from './assets/2H0A9290.JPG'
 import './Header.css';
 
 const Header = () => {
